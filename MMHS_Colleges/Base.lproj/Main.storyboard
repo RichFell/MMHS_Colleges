@@ -75,13 +75,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQm-a5-Fni">
                                 <rect key="frame" x="238" y="147" width="125" height="123"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xm-OV-Hm0">
-                                <rect key="frame" x="143" y="388" width="314" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="PRU-F4-6TO"/>
-                                    <constraint firstAttribute="width" constant="314" id="b5y-A8-bdT"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xm-OV-Hm0">
+                                <rect key="frame" x="200" y="388" width="200" height="30"/>
                                 <state key="normal" title="Address">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -89,7 +86,7 @@
                                     <segue destination="4P3-ue-ziR" kind="show" identifier="Segue_MapView" id="wGm-K0-PQw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWv-kj-gtf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWv-kj-gtf">
                                 <rect key="frame" x="277" y="457" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,21 +95,91 @@
                                     <segue destination="RdO-59-zH7" kind="show" identifier="Segue_WebView" id="8k7-Q0-fkX"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGo-kQ-R5t">
+                                <rect key="frame" x="161" y="388" width="279" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="Sb9-Hj-eIk"/>
+                                    <constraint firstAttribute="height" constant="30" id="xgO-Ac-PEa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4UW-00-BU9">
+                                <rect key="frame" x="161" y="457" width="279" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="6JP-tp-pGA"/>
+                                    <constraint firstAttribute="height" constant="30" id="p3Q-sS-rB9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="er8-FR-HG5">
+                                <rect key="frame" x="550" y="388" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="twZ-ok-1BT"/>
+                                    <constraint firstAttribute="width" constant="30" id="ykm-tT-kRT"/>
+                                </constraints>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedEditLocation:" destination="XBN-pD-Hj9" eventType="touchUpInside" id="byL-5u-DdW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1S-q3-36D">
+                                <rect key="frame" x="550" y="457" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="POd-j2-2Ez"/>
+                                    <constraint firstAttribute="height" constant="30" id="haW-dL-NwV"/>
+                                </constraints>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedEditWebPage:" destination="XBN-pD-Hj9" eventType="touchUpInside" id="X7w-XJ-TjX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="u1S-q3-36D" firstAttribute="top" secondItem="r2p-Kz-1ZY" secondAttribute="top" constant="457" id="AYd-8K-dLg"/>
+                            <constraint firstItem="er8-FR-HG5" firstAttribute="top" secondItem="r2p-Kz-1ZY" secondAttribute="top" constant="388" id="CnW-NA-Q3O"/>
                             <constraint firstItem="9Xm-OV-Hm0" firstAttribute="top" secondItem="r2p-Kz-1ZY" secondAttribute="top" constant="388" id="E0I-b9-K8e"/>
+                            <constraint firstAttribute="trailing" secondItem="er8-FR-HG5" secondAttribute="trailing" constant="20" id="G7i-Bu-42a"/>
+                            <constraint firstAttribute="centerX" secondItem="xGo-kQ-R5t" secondAttribute="centerX" id="ItW-dt-Vxt"/>
+                            <constraint firstItem="DWv-kj-gtf" firstAttribute="top" secondItem="r2p-Kz-1ZY" secondAttribute="top" constant="457" id="R0n-gh-3f3"/>
+                            <constraint firstAttribute="centerX" secondItem="4UW-00-BU9" secondAttribute="centerX" id="ZT0-bC-ero"/>
                             <constraint firstAttribute="centerX" secondItem="9Xm-OV-Hm0" secondAttribute="centerX" id="eKK-67-suD"/>
+                            <constraint firstItem="xGo-kQ-R5t" firstAttribute="top" secondItem="r2p-Kz-1ZY" secondAttribute="top" constant="388" id="lPz-da-UAQ"/>
+                            <constraint firstAttribute="centerX" secondItem="DWv-kj-gtf" secondAttribute="centerX" id="s3D-5e-eGJ"/>
+                            <constraint firstItem="4UW-00-BU9" firstAttribute="top" secondItem="r2p-Kz-1ZY" secondAttribute="top" constant="457" id="s6R-wk-F70"/>
                             <constraint firstAttribute="centerX" secondItem="aQm-a5-Fni" secondAttribute="centerX" id="srk-9E-RvE"/>
+                            <constraint firstAttribute="trailing" secondItem="u1S-q3-36D" secondAttribute="trailing" constant="20" id="ub5-4w-39A"/>
                             <constraint firstItem="aQm-a5-Fni" firstAttribute="top" secondItem="r2p-Kz-1ZY" secondAttribute="top" constant="147" id="vcT-Mc-gX2"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nkX-MJ-JUs" appends="YES" id="ZaE-4m-7Ez"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="editLocationButton" destination="er8-FR-HG5" id="f84-fg-teO"/>
+                        <outlet property="editLocationTextField" destination="xGo-kQ-R5t" id="p7p-qW-CbB"/>
+                        <outlet property="editWebPageButton" destination="u1S-q3-36D" id="2SJ-dN-g1I"/>
+                        <outlet property="editWebPageTextField" destination="4UW-00-BU9" id="JFZ-e0-H92"/>
                         <outlet property="imageView" destination="aQm-a5-Fni" id="cqe-Bi-IQY"/>
                         <outlet property="locationButton" destination="9Xm-OV-Hm0" id="RLz-jL-sYi"/>
+                        <outlet property="webpageButton" destination="DWv-kj-gtf" id="99Q-17-gLv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1f-kF-qHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nkX-MJ-JUs">
+                    <connections>
+                        <action selector="onImageTapped:" destination="XBN-pD-Hj9" id="UhT-7G-PIf"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1734" y="291"/>
         </scene>

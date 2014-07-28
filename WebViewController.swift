@@ -23,7 +23,7 @@ class WebViewController: UIViewController, UIWebViewDelegate
 
         goToWebPage(college.webpage)
 
-        navigationItem.title = college.name
+        navigationItem.title = college.webpage
     }
 
     func webViewDidStartLoad(webView: UIWebView!)

@@ -17,10 +17,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let collegeOne = College(name: "Ohio State University", location: "Columbus, OH", image: UIImage(named: "Brutus"), color: UIColor.redColor(), webpage: "http://www.OSU.edu")
-        let collegeTwo = College(name: "University of Dayton", location: "Dayton, OH", image: UIImage(named: "FlyerImage"), color: UIColor.redColor(), webpage: "http://www.UofD.edu")
-        let collegeThree = College(name: "NorthWestern University", location: "Evanston, IL", image: UIImage(named: "NorthWestern"), color: UIColor.purpleColor(), webpage: "http://www.NorthWesternUni.edu")
-        let collegeFour = College(name: "Muskingum University", location: "New Concord, OH", image: UIImage(named: "Muskie"), color: UIColor.magentaColor(), webpage: "http://www.muskingum.edu")
+        let collegeOne = College(name: "Ohio State University", location: "Columbus, OH", image: UIImage(named: "Brutus"), color: UIColor.redColor(), webpage: "http://www.osu.edu", secondaryColor: UIColor.grayColor())
+        let collegeTwo = College(name: "University of Dayton", location: "Dayton, OH", image: UIImage(named: "Default"), color: UIColor.redColor(), webpage: "http://www.UofD.edu", secondaryColor: UIColor.whiteColor())
+        let collegeThree = College(name: "NorthWestern University", location: "Evanston, IL", image: UIImage(named: "NorthWestern_Image"), color: UIColor.purpleColor(), webpage: "http://www.NorthWesternUni.edu", secondaryColor: UIColor.whiteColor())
+        let collegeFour = College(name: "Muskingum University", location: "New Concord, OH", image: UIImage(named: "Muskie"), color: UIColor.magentaColor(), webpage: "http://www.muskingum.edu", secondaryColor: UIColor.blackColor())
         colleges += [collegeOne, collegeTwo, collegeThree, collegeFour]
 
     }
@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let saveAction = UIAlertAction(title: "Add", style: .Default, handler: ({ action in
             let textFieldOne = alert.textFields[0] as UITextField
             let textFieldTwo = alert.textFields[1] as UITextField
-            let college = College(name: textFieldOne.text, location: textFieldTwo.text, image: UIImage(named: "Default"), color:UIColor.whiteColor(), webpage: "Http://www.google.com")
+            let college = College(name: textFieldOne.text, location: textFieldTwo.text, image: UIImage(named: "Default"), color:UIColor.whiteColor(), webpage: "Http://www.google.com", secondaryColor: UIColor.blackColor())
 
             self.colleges += college
             self.tabelView.reloadData()

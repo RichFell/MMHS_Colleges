@@ -25,9 +25,11 @@ class MapViewController: UIViewController, UITextFieldDelegate
 
         textField.delegate = self
 
+        navigationItem.title = college.name
+
         for object in colleges
         {
-            setAnnotation(object.location)
+            setAnnotation(object)
         }
     }
 
@@ -48,10 +50,10 @@ class MapViewController: UIViewController, UITextFieldDelegate
             })
     }
 
-    func setAnnotation(location: String)
+    func setAnnotation(object: College)
     {
         let geocoder = CLGeocoder()
-        geocoder.geocodeAddressString(location, completionHandler: {placemarks, error in
+        geocoder.geocodeAddressString(object.location, completionHandler: {placemarks, error in
             if error
             {
                 println(error.localizedDescription)
@@ -61,7 +63,7 @@ class MapViewController: UIViewController, UITextFieldDelegate
                 let placemark = placemarks[0] as CLPlacemark
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = placemark.location.coordinate
-                annotation.title = self.college.name
+                annotation.title = object.name
                 self.mapView.addAnnotation(annotation)
             }
             })
