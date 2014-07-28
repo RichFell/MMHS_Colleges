@@ -12,8 +12,8 @@ import UIKit
 class DetailViewController: UIViewController
 {
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var addressButton: UIButton!
-    @IBOutlet weak var websiteButton: UIButton!
+
+    @IBOutlet weak var addressLabel: UILabel!
 
     var college : College!
 
@@ -22,7 +22,8 @@ class DetailViewController: UIViewController
         super.viewDidLoad()
         navigationItem.title = college.name
         imageView.image = college.image
-        addressButton.setTitle(college.location, forState: .Normal)
+        addressLabel.text = college.location
+        view.backgroundColor = college.color
     }
 
 }

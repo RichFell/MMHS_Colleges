@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         let collegeOne = College(name: "Ohio State University", location: "Columbus, OH", image: UIImage(named: "Brutus"), color: UIColor.redColor())
         let collegeTwo = College(name: "University of Dayton", location: "Dayton, OH", image: UIImage(named: "FlyerImage"), color: UIColor.redColor())
-        let collegeThree = College(name: "NorthWestern University", location: "Chicago, IL", image: UIImage(named: "NorthWestern"), color: UIColor.blueColor())
+        let collegeThree = College(name: "NorthWestern University", location: "Evanston, IL", image: UIImage(named: "NorthWestern"), color: UIColor.blueColor())
         let collegeFour = College(name: "Muskingum University", location: "New Concord, OH", image: UIImage(named: "Muskie"), color: UIColor.magentaColor())
         colleges += [collegeOne, collegeTwo, collegeThree, collegeFour]
 
@@ -63,6 +63,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
     {
         return colleges.count
+    }
+
+    func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!)
+    {
+        if editingStyle == .Delete
+        {
+            colleges.removeAtIndex(indexPath.row)
+            tabelView.reloadData()
+        }
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
