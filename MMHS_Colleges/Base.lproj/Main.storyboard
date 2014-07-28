@@ -86,7 +86,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4P3-ue-ziR" kind="show" id="wGm-K0-PQw"/>
+                                    <segue destination="4P3-ue-ziR" kind="show" identifier="Segue_MapView" id="wGm-K0-PQw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWv-kj-gtf">
@@ -95,7 +95,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RdO-59-zH7" kind="show" id="8k7-Q0-fkX"/>
+                                    <segue destination="RdO-59-zH7" kind="show" identifier="Segue_WebView" id="8k7-Q0-fkX"/>
                                 </connections>
                             </button>
                         </subviews>

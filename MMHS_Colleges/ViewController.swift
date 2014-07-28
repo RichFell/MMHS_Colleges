@@ -35,13 +35,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addTextFieldWithConfigurationHandler({ textField in
             textField.placeholder = "Location of College"
             })
+        alert.addTextFieldWithConfigurationHandler({ textField in
+            textField.placeholder = "Webpage for College"
+            })
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: ({ action in
             }))
         alert.addAction(cancelAction)
         let saveAction = UIAlertAction(title: "Add", style: .Default, handler: ({ action in
             let textFieldOne = alert.textFields[0] as UITextField
             let textFieldTwo = alert.textFields[1] as UITextField
-            let college = College(name: textFieldOne.text, location: textFieldTwo.text , image: UIImage(named: "Default"), color: UIColor.grayColor())
+            let college = College(name: textFieldOne.text, location: textFieldTwo.text, image: UIImage(named: "Default"), color:UIColor.whiteColor(), webpage: "Http://www.google.com")
 
             self.colleges += college
             self.tabelView.reloadData()

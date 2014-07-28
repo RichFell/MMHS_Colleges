@@ -12,8 +12,8 @@ class College: NSObject
 {
     var name : String = ""
     var location : String = ""
-    var image = UIImage()
-    var color = UIColor()
+    var image : UIImage!
+    var color : UIColor!
     var webpage : String = ""
 
     convenience init (name: String, location: String, image: UIImage, color: UIColor, webpage: String)
