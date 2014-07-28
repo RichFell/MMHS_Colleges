@@ -79,6 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let detailVC = segue.destinationViewController as DetailViewController
         let indexPath = tabelView.indexPathForSelectedRow()
         detailVC.college = colleges[indexPath.row]
+        detailVC.collegeArray = colleges
     }
 }
 

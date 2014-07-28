@@ -15,6 +15,8 @@
 		9B40AF49198586D700B67E85 /* MMHS_CollegesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40AF48198586D700B67E85 /* MMHS_CollegesTests.swift */; };
 		9B40AF5519858BE600B67E85 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40AF5419858BE600B67E85 /* College.swift */; };
 		9B4B5CC41985CA28000EBC5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B5CC31985CA28000EBC5E /* DetailViewController.swift */; };
+		9B4B5CC61985DD3E000EBC5E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B5CC51985DD3E000EBC5E /* MapViewController.swift */; };
+		9B4B5CC81985DD6B000EBC5E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B5CC71985DD6B000EBC5E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		9B40AF48198586D700B67E85 /* MMHS_CollegesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHS_CollegesTests.swift; sourceTree = "<group>"; };
 		9B40AF5419858BE600B67E85 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = College.swift; path = ../College.swift; sourceTree = "<group>"; };
 		9B4B5CC31985CA28000EBC5E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
+		9B4B5CC51985DD3E000EBC5E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		9B4B5CC71985DD6B000EBC5E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4B5CC81985DD6B000EBC5E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 		9B40AF24198586D700B67E85 = {
 			isa = PBXGroup;
 			children = (
+				9B4B5CC71985DD6B000EBC5E /* MapKit.framework */,
 				9B40AF2F198586D700B67E85 /* MMHS_Colleges */,
 				9B40AF45198586D700B67E85 /* MMHS_CollegesTests */,
 				9B40AF2E198586D700B67E85 /* Products */,
@@ -84,6 +90,7 @@
 				9B40AF32198586D700B67E85 /* AppDelegate.swift */,
 				9B40AF37198586D700B67E85 /* ViewController.swift */,
 				9B4B5CC31985CA28000EBC5E /* DetailViewController.swift */,
+				9B4B5CC51985DD3E000EBC5E /* MapViewController.swift */,
 				9B40AF5419858BE600B67E85 /* College.swift */,
 				9B40AF39198586D700B67E85 /* Main.storyboard */,
 				9B40AF3C198586D700B67E85 /* Images.xcassets */,
@@ -218,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B40AF38198586D700B67E85 /* ViewController.swift in Sources */,
+				9B4B5CC61985DD3E000EBC5E /* MapViewController.swift in Sources */,
 				9B40AF36198586D700B67E85 /* MMHS_Colleges.xcdatamodeld in Sources */,
 				9B4B5CC41985CA28000EBC5E /* DetailViewController.swift in Sources */,
 				9B40AF33198586D700B67E85 /* AppDelegate.swift in Sources */,

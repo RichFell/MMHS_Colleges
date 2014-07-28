@@ -12,18 +12,25 @@ import UIKit
 class DetailViewController: UIViewController
 {
     @IBOutlet weak var imageView: UIImageView!
-
-    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var locationButton: UIButton!
 
     var college : College!
+    var collegeArray : [College]!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         navigationItem.title = college.name
         imageView.image = college.image
-        addressLabel.text = college.location
+        locationButton.setTitle(college.location, forState: .Normal)
         view.backgroundColor = college.color
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
+    {
+        let mapVC = segue.destinationViewController as MapViewController
+        mapVC.college = college
+        mapVC.colleges = collegeArray
     }
 
 }
