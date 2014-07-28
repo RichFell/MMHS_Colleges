@@ -89,6 +89,15 @@
                                     <segue destination="4P3-ue-ziR" kind="show" id="wGm-K0-PQw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWv-kj-gtf">
+                                <rect key="frame" x="277" y="457" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RdO-59-zH7" kind="show" id="8k7-Q0-fkX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -153,7 +162,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SgX-8K-RUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404" y="291"/>
+            <point key="canvasLocation" x="2444" y="-135"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="1te-Qf-FdN">
+            <objects>
+                <viewController id="RdO-59-zH7" customClass="WebViewController" customModule="MMHS_Colleges" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UmK-Xi-0t2"/>
+                        <viewControllerLayoutGuide type="bottom" id="X6x-Pf-6KU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0b0-RR-JZW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQ8-sI-IvP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="dTF-4T-k2K">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="0ZR-o8-bPu"/>
+                                    <constraint firstAttribute="width" constant="37" id="9mL-T1-oF2"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vQ8-sI-IvP" firstAttribute="leading" secondItem="0b0-RR-JZW" secondAttribute="leading" id="19A-be-qzK"/>
+                            <constraint firstItem="X6x-Pf-6KU" firstAttribute="top" secondItem="vQ8-sI-IvP" secondAttribute="bottom" id="Eun-TX-y5w"/>
+                            <constraint firstAttribute="centerX" secondItem="vQ8-sI-IvP" secondAttribute="centerX" id="Ixk-ym-lki"/>
+                            <constraint firstAttribute="trailing" secondItem="vQ8-sI-IvP" secondAttribute="trailing" id="LWh-TU-t5B"/>
+                            <constraint firstItem="vQ8-sI-IvP" firstAttribute="top" secondItem="0b0-RR-JZW" secondAttribute="top" id="WlW-1t-QfI"/>
+                            <constraint firstItem="dTF-4T-k2K" firstAttribute="top" secondItem="0b0-RR-JZW" secondAttribute="top" constant="281" id="ayv-t3-w9K"/>
+                            <constraint firstAttribute="centerX" secondItem="dTF-4T-k2K" secondAttribute="centerX" id="gvu-wx-xUz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="dTF-4T-k2K" id="fMR-Kz-IWf"/>
+                        <outlet property="webView" destination="vQ8-sI-IvP" id="drz-Jc-Yi5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXA-iD-ZgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2450" y="562"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XnI-ye-69f">

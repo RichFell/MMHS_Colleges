@@ -2,7 +2,7 @@
 //  MapViewController.swift
 //  MMHS_Colleges
 //
-//  Created by Richard Fellure on 7/27/14.
+//  Created by Mobile Makers Academy on 7/27/14.
 //  Copyright (c) 2014 Mobile Makers. All rights reserved.
 //
 

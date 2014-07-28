@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  MMHS_Colleges
 //
-//  Created by Richard Fellure on 7/27/14.
+//  Created by Mobile Makers Academy on 7/27/14.
 //  Copyright (c) 2014 Mobile Makers. All rights reserved.
 //
 
@@ -17,10 +17,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let collegeOne = College(name: "Ohio State University", location: "Columbus, OH", image: UIImage(named: "Brutus"), color: UIColor.redColor())
-        let collegeTwo = College(name: "University of Dayton", location: "Dayton, OH", image: UIImage(named: "FlyerImage"), color: UIColor.redColor())
-        let collegeThree = College(name: "NorthWestern University", location: "Evanston, IL", image: UIImage(named: "NorthWestern"), color: UIColor.blueColor())
-        let collegeFour = College(name: "Muskingum University", location: "New Concord, OH", image: UIImage(named: "Muskie"), color: UIColor.magentaColor())
+        let collegeOne = College(name: "Ohio State University", location: "Columbus, OH", image: UIImage(named: "Brutus"), color: UIColor.redColor(), webpage: "http://www.OSU.edu")
+        let collegeTwo = College(name: "University of Dayton", location: "Dayton, OH", image: UIImage(named: "FlyerImage"), color: UIColor.redColor(), webpage: "http://www.UofD.edu")
+        let collegeThree = College(name: "NorthWestern University", location: "Evanston, IL", image: UIImage(named: "NorthWestern"), color: UIColor.purpleColor(), webpage: "http://www.NorthWesternUni.edu")
+        let collegeFour = College(name: "Muskingum University", location: "New Concord, OH", image: UIImage(named: "Muskie"), color: UIColor.magentaColor(), webpage: "http://www.muskingum.edu")
         colleges += [collegeOne, collegeTwo, collegeThree, collegeFour]
 
     }

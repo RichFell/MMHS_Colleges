@@ -2,7 +2,7 @@
 //  DetailViewController.swift
 //  MMHS_Colleges
 //
-//  Created by Richard Fellure on 7/27/14.
+//  Created by Mobile Makers Academy on 7/27/14.
 //  Copyright (c) 2014 Mobile Makers. All rights reserved.
 //
 
@@ -28,9 +28,17 @@ class DetailViewController: UIViewController
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
     {
+        if segue.identifier == "Segue_MapView"
+        {
         let mapVC = segue.destinationViewController as MapViewController
         mapVC.college = college
         mapVC.colleges = collegeArray
+        }
+        else
+        {
+            let webVC = segue.destinationViewController as WebViewController
+            webVC.college = college
+        }
     }
 
 }

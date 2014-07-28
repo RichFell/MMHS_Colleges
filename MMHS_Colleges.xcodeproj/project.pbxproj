@@ -17,6 +17,7 @@
 		9B4B5CC41985CA28000EBC5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B5CC31985CA28000EBC5E /* DetailViewController.swift */; };
 		9B4B5CC61985DD3E000EBC5E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B5CC51985DD3E000EBC5E /* MapViewController.swift */; };
 		9B4B5CC81985DD6B000EBC5E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B5CC71985DD6B000EBC5E /* MapKit.framework */; };
+		9B4B5CCA1985F389000EBC5E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B5CC91985F389000EBC5E /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9B4B5CC31985CA28000EBC5E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		9B4B5CC51985DD3E000EBC5E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		9B4B5CC71985DD6B000EBC5E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9B4B5CC91985F389000EBC5E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ../WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				9B40AF37198586D700B67E85 /* ViewController.swift */,
 				9B4B5CC31985CA28000EBC5E /* DetailViewController.swift */,
 				9B4B5CC51985DD3E000EBC5E /* MapViewController.swift */,
+				9B4B5CC91985F389000EBC5E /* WebViewController.swift */,
 				9B40AF5419858BE600B67E85 /* College.swift */,
 				9B40AF39198586D700B67E85 /* Main.storyboard */,
 				9B40AF3C198586D700B67E85 /* Images.xcassets */,
@@ -228,6 +231,7 @@
 				9B4B5CC61985DD3E000EBC5E /* MapViewController.swift in Sources */,
 				9B40AF36198586D700B67E85 /* MMHS_Colleges.xcdatamodeld in Sources */,
 				9B4B5CC41985CA28000EBC5E /* DetailViewController.swift in Sources */,
+				9B4B5CCA1985F389000EBC5E /* WebViewController.swift in Sources */,
 				9B40AF33198586D700B67E85 /* AppDelegate.swift in Sources */,
 				9B40AF5519858BE600B67E85 /* College.swift in Sources */,
 			);
